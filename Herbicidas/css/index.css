@@ -1,0 +1,214 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Estilos de la cabecera */
+.cabeza {
+    background-image: url(../img/campo4.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    color: black;
+    padding: 50px 20px;
+    width: 100%;
+}
+
+.cabeza h1, .cabeza h2 {
+    margin: 0;
+}
+
+.cabeza h2 {
+    font-size: 3.5vw; /* Tamaño de fuente responsive */
+    margin-top: 20px;
+}
+
+.cabeza nav {
+    margin-top: 20px;
+}
+
+.cabeza nav a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: rgb(10, 5, 38);
+    font-size: 1.5vw; /* Tamaño de fuente responsive */
+}
+
+/* Estilos del subtítulo */
+.subtitulo {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 2vw; /* Tamaño de fuente responsive */
+}
+
+/* Estilos de la sección OroCafe */
+.OroCafe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.Oro, .cafe {
+    width: 100%;
+    max-width: 800px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    font-size: 1.2vw;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.masVendidos {
+    text-align: center;
+}
+
+/* Estilos del carrusel */
+.carousel-container {
+    width: 100%; /* Ajustar ancho máximo para el carrusel */
+    max-width: 800px;
+    overflow: hidden;
+    position: relative;
+    margin: 20px auto;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%; /* Hacer que cada item ocupe el 100% del contenedor */
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto; /* Ajustar altura automáticamente */
+}
+
+/* Estilos del botón "Ver más" */
+.ver-mas-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.ver-mas-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Estilos del botón de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-button img {
+    width: 50px; /* Tamaño del ícono */
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en filas si es necesario */
+    margin-bottom: 20px;
+}
+
+.footer-content a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.contact-section {
+    flex: 1; /* Cada sección tomará espacio igual */
+    padding: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-icon {
+    width: 20px; /* Tamaño del ícono */
+    margin-right: 10px;
+}
+
+.social-media {
+    flex: 1; /* Cada sección tomará espacio igual */
+    padding: 20px;
+}
+
+.social-media a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+/* Estilos para los derechos de autor */
+.rights {
+    margin-top: 20px;
+}
+.links{
+    display: none;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .cabeza h2 {
+        font-size: 5vw; /* Ajustar tamaño para pantallas pequeñas */
+    }
+
+    .cabeza nav a {
+        font-size: 3vw; /* Ajustar tamaño para pantallas pequeñas */
+    }
+
+    .Oro, .cafe {
+        font-size: 3vw; /* Ajustar tamaño para pantallas pequeñas */
+    }
+
+    .footer-content {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+    }
+
+    .contact-section, .social-media {
+        flex: none; /* Asegurarse de que tomen el 100% de ancho */
+        text-align: center; /* Centrar contenido en pantallas pequeñas */
+    }
+}
